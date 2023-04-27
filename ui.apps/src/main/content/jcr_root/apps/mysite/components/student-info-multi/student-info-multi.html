@@ -1,0 +1,11 @@
+<h3> Student Info Multifield component </h3>
+
+<sly data-sly-use.studentinfo="${'com.mysite.core.models.StudentInfoMultiFieldModel'}"></sly>
+
+
+<h4>${studentinfo.name}</h4>
+<h3>${studentinfo.id}</h3>
+
+<ul data-sly-list.hobbies="${studentinfo.multifield}">
+	<li>${hobbies.hobby}</li>
+</ul>

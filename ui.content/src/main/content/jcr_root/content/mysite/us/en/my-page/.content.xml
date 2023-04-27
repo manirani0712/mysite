@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2023-04-26T22:40:41.298+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/mysite/settings/wcm/templates/my-custom-template"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="My Page"
+        sling:resourceType="mysite/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="mysite/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="mysite/components/container"
+                layout="responsiveGrid">
+                <student_info_simple
+                    jcr:created="{Date}2023-04-26T20:00:39.774+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2023-04-26T20:00:53.447+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="mysite/components/student-info-simple"
+                    id="1001"
+                    name="Mani Rani"/>
+                <student_info_multi
+                    jcr:created="{Date}2023-04-26T21:57:32.499+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2023-04-26T22:04:58.416+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="mysite/components/student-info-multi"
+                    id="1002"
+                    name="Mani Rani">
+                    <multifield jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            hobby="AEM"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            hobby="Singing"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            hobby="Dancing"/>
+                    </multifield>
+                </student_info_multi>
+                <usergroups
+                    jcr:created="{Date}2023-04-26T22:10:50.874+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2023-04-26T22:10:50.874+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="mysite/components/usergroups"/>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>
